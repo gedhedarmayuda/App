@@ -1,13 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>details2</ion-title>
+    <ion-title>Pasta con Gambas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">details2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-card>
+  <img src="assets/R_Pasta con Gambas.jpeg" alt="Pasta con Gambas">
+  <ion-card-content>
+    <div class="ion-text-center">
+      <ion-card-subtitle>Pasta con Gambas</ion-card-subtitle>
+      <p>Restaurant Menu</p>
+    </div>
+    <p class="ion-text-start">Linguine sautéed in shrimps, mushrooms, and olive oil.</p>
+    <p><b>SIZE</b></p>
+    <ion-radio-group class="ion-text-center">
+      <ion-radio value="end" labelPlacement="end">Single Order - ₱ 355</ion-radio>
+    </ion-radio-group>
+    <ion-button expand="full" color="success">Add to Cart</ion-button>
+    <ion-button (click)="goHome()" expand="full" color="dark">Back to Menu</ion-button>
+  </ion-card-content>
+</ion-card>
 </ion-content>

@@ -7,12 +7,18 @@
 <ion-content [fullscreen]="true">
 <ion-card>
   <img src="assets/5_PESTO.jpg" alt="Linguine in Pesto Sauce">
-  <ion-card-header>
-    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-    <ion-card-title>Awesome Title</ion-card-title>
-  </ion-card-header>
   <ion-card-content>
-    Awesome content
+    <div class="ion-text-center"> 
+      <ion-card-subtitle>Linguine in Pesto Sauce</ion-card-subtitle>
+      <p>Restaurant Menu</p>
+    </div>
+    <p class="ion-text-start">Linguine tossed in rich green basil sauce.</p>
+    <p><b>SIZE</b></p>
+    <ion-radio-group class="ion-text-center">
+      <ion-radio value="end" labelPlacement="end">Single Order - ₱ 295</ion-radio>
+    </ion-radio-group>
+    <ion-button expand="full" color="success">Add to Cart</ion-button>
+    <ion-button (click)="goHome()" expand="full" color="dark">Back to Menu</ion-button>
   </ion-card-content>
 </ion-card>
 </ion-content>

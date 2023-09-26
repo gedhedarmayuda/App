@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-details3',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Details3Page implements OnInit {
 
-  constructor() { }
+  constructor(private NavCtrl:NavController) { }
 
   ngOnInit() {
+  }
+  goHome(){
+    this.NavCtrl.navigateBack('home');
   }
 
 }
