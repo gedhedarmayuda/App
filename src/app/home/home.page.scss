@@ -25,3 +25,15 @@
 #container a {
   text-decoration: none;
 }
+img {
+  --size: 140px;
+  --border-radius: 14px;
+  align-items: center;
+}
+ion-card-subtitle{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: green;
+}
+p{
+  font-size: 11px;
+}

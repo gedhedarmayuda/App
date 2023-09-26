@@ -7,14 +7,44 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card  (click)="onClickItem1()">
+    <ion-card-header>
+      <img src="assets/5_PESTO.jpg" alt="pasta" srcset="" class="ion-justify-content-center">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle class="ion-text-start">Linguine in Pesto Sauce</ion-card-subtitle>
+      <ion-card-subtitle>₱ 295</ion-card-subtitle>
+      <p>Linguine tossed in rich green basil sauce.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card  (click)="onClickItem2()">
+    <ion-card-header>
+      <img src="assets/R_Linguine in Pesto Sauce with Seafood.jpeg" alt="pasta" srcset="" class="ion-justify-content-center">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle class="ion-text-start">Linguine in Pesto Sauce with Seafood</ion-card-subtitle>
+      <ion-card-subtitle>₱ 395</ion-card-subtitle>
+      <p>Linguine tossed in rich green basil sauce with seafood.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card  (click)="onClickItem3()">
+    <ion-card-header>
+      <img src="assets/R_Pasta con Gambas.jpeg" alt="pasta" srcset="" class="ion-justify-content-center">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle class="ion-text-start">Pasta con Gambas</ion-card-subtitle>
+      <ion-card-subtitle>₱ 355</ion-card-subtitle>
+      <p>Linguine sautéed in shrimps, mushrooms, and olive oil.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card  (click)="onClickItem4()">
+    <ion-card-header>
+      <img src="assets/Truffle Mushroom Linguine.jpg" alt="pasta" srcset="" class="ion-justify-content-center">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle class="ion-text-start">Truffle Mushroom Linguine</ion-card-subtitle>
+      <ion-card-subtitle>₱ 420</ion-card-subtitle>
+      <p>Creamy linguine pasta with shiitake mushrooms, drizzled with white truffle oil.</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
